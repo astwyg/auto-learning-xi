@@ -1,2 +1,5 @@
 /env
 /.idea
+/build
+/dist
+*.pyc
