@@ -3,11 +3,11 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 
-import time
+import time, os
 
 import qrcode
 
-browser = webdriver.Chrome()
+browser = webdriver.Chrome(os.path.join(os.path.dirname(__file__), "chromedriver.exe"))
 
 def user_login():
     browser.get("https://pc.xuexi.cn/points/login.html?ref=https://www.xuexi.cn/")
